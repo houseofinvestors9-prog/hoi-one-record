@@ -1,3 +1,5 @@
-This part is public and needs no login. It reads the records nobody reads. RERA filings and orders, building permits, lake boundaries, government guideline values.
-Claude reads the new documents. A person approves every verdict before it publishes, because being wrong in public about somebody's project carries legal exposure.
-And a buyer who checks a project here becomes a family record in the same engine. That closes the loop.
+Two hundred and thirty four partner firms register buyers here. They compete with each other and they do not trust each other.
+
+First registration owns the buyer for ninety days. A second firm registering the same number gets marked duplicate automatically. Where both have a real claim it goes to arbitration, and the decision is written to a log that nobody can edit, including me.
+
+Twenty four duplicates caught. Three disputes decided.

@@ -114,7 +114,7 @@ def number(path, num, lab, note=None):
 
 def slate(path, n, title, items, dur):
     img, d = base(dark=False)
-    d.text((M, 150), f"SCREEN CAPTURE {n} OF 6   ·   HOLD {dur}",
+    d.text((M, 150), f"SCREEN CAPTURE {n} OF 3   ·   HOLD {dur}",
            font=mono(24, 1), fill=BRONZE)
     fh = f(76, 1)
     y = 236
@@ -145,7 +145,25 @@ def endcard(path):
     img.save(path)
 
 
+def stack(path, lines, accent_from=None, size=110):
+    img, d = base()
+    fo = f(size, 1)
+    lh = int(size * 1.26)
+    y = (H - len(lines) * lh) // 2 - 20
+    for i, ln in enumerate(lines):
+        hot = accent_from is not None and i >= accent_from
+        d.text((M, y), ln, font=fo, fill=BRONZE if hot else ON_BAND)
+        y += lh
+    img.save(path)
+
+
 C = "cards/"
+
+stack(C + "c0a.png", ["Two firms.", "The same buyer.", "One commission."], size=124)
+
+stack(C + "c0b.png",
+      ["That fight used to happen", "on WhatsApp.", "Nobody wrote down who won."],
+      accent_from=2, size=94)
 
 statement(C + "c1a.png",
           "A family in Hyderabad decides to buy a flat.",
@@ -155,8 +173,7 @@ statement(C + "c1a.png",
 
 lines_card(C + "c1b.png", "By the third call, nobody is winning.", [
     "The family has stopped answering properly.",
-    "Two firms registered the same number and fight about the commission on WhatsApp.",
-    "The builder, who pays for the ads and owns the flats, asks somebody for a sheet.",
+    "The builder, who pays for the ads and owns the flats, asks somebody for a sheet to find out how his own project sold this week.",
 ])
 
 statement(C + "c2a.png",
@@ -171,19 +188,19 @@ slate(C + "s3.png", 1, "One family record in the Lead Engine", [
     "Hold on client_id. It is the hero of the shot.",
     "Show: source and ad creative, calls, site visit, stated budget vs revealed, cheque, booking.",
     "End on project_history, the second property eighteen months later.",
-], "15.9s")
+], "25.6s")
 
 slate(C + "s4.png", 2, "Attribution: duplicate, contested, audit log", [
     "A lead marked duplicate. Show attribution_status and attribution_until.",
     "A lead marked contested, then its AuditLog entry.",
     "Show that AuditLog has no edit and no delete control, for any role.",
-], "20.9s")
+], "25.8s")
 
 slate(C + "s5.png", 3, "hyderabad.properties and the review desk", [
     "Search a project. Open its report.",
     "Show the source list and the document dates.",
     "Then the review desk with a verdict waiting for a person to approve.",
-], "21.1s")
+], "26.5s")
 
 number(C + "n1.png", "9,100", "families on one record", "Lead.client_id, issued once, never reused")
 number(C + "n2.png", "6,415", "pulled out of spreadsheets", "One backfill, 6 October 2026")

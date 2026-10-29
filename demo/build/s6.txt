@@ -1,5 +1,5 @@
-Nine thousand one hundred families on one record.
-Six thousand four hundred of them pulled out of spreadsheets in a single backfill on the sixth of October.
-Thirty to forty thousand contacts logged against them.
-Twenty seven people using it every working day.
-Seventy four bookings closed on it.
+This part is public and needs no login. It reads the records nobody reads. RERA filings and orders, building permits, lake boundaries, government guideline values.
+
+Claude reads the new documents. A person approves every verdict before it publishes, because being wrong in public about somebody's project carries legal exposure.
+
+And a buyer who checks a project here becomes a family record in the same engine. That closes the loop.

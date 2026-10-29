@@ -87,7 +87,7 @@ Six surfaces write to the same record. Only the first needs no login.
 | Live project | https://hyderabad.properties |
 | Code | this repository, plus [hyderabad-properties](https://github.com/houseofinvestors9-prog/hyderabad-properties) |
 | Case study | https://claude.ai/artifact/1tgQ61k4rGfeX2tPQt5ZZb |
-| Demo video | [demo/one-record-demo.mp4](demo/one-record-demo.mp4), 2:13. Three shots are holding slates until the screen captures are recorded |
+| Demo video | [demo/one-record-demo.mp4](demo/one-record-demo.mp4), 2:57. Three shots are holding slates until the screen captures are recorded |
 
 ## What this does not claim
 
