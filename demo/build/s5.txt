@@ -1,0 +1,3 @@
+This part is public and needs no login. It reads the records nobody reads. RERA filings and orders, building permits, lake boundaries, government guideline values.
+Claude reads the new documents. A person approves every verdict before it publishes, because being wrong in public about somebody's project carries legal exposure.
+And a buyer who checks a project here becomes a family record in the same engine. That closes the loop.

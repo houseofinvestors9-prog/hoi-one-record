@@ -77,6 +77,7 @@ Six surfaces write to the same record. Only the first needs no login.
 | [docs/05-null-test.md](docs/05-null-test.md) | What we chose not to build, and why |
 | [docs/06-validation.md](docs/06-validation.md) | The five conversations, who and what to ask |
 | [demo/video-script.md](demo/video-script.md) | Shot by shot script for the demo video |
+| [demo/edit-sheet.md](demo/edit-sheet.md) | Timecodes for the cut and what is still to be recorded |
 | [schema/](schema/) | 49 entity definitions exported from production. Field names only, no records |
 
 ## The four submissions
@@ -86,7 +87,7 @@ Six surfaces write to the same record. Only the first needs no login.
 | Live project | https://hyderabad.properties |
 | Code | this repository, plus [hyderabad-properties](https://github.com/houseofinvestors9-prog/hyderabad-properties) |
 | Case study | https://claude.ai/artifact/1tgQ61k4rGfeX2tPQt5ZZb |
-| Demo video | script in [demo/video-script.md](demo/video-script.md) |
+| Demo video | [demo/one-record-demo.mp4](demo/one-record-demo.mp4), 2:13. Three shots are holding slates until the screen captures are recorded |
 
 ## What this does not claim
 
