@@ -4,45 +4,46 @@
 > have: a skill, an MCP connector, a scheduled trigger. If that version is good enough to
 > provide the desired output, pick a different problem.
 
-Run honestly, against each piece.
+Run honestly against each piece.
 
-## Where a generic assistant is enough, and we use one
+## Where a scheduled prompt was enough, and we used one
 
 These were built as skills and scheduled triggers, and they stayed that way because that
-is all they needed to be:
+is all they needed.
 
-- The weekly Terrace 35 ad review. Pulls Meta spend and compares it against lead quality
-  in the sheet. A connector plus a scheduled prompt. No app was built for it.
-- The weekly market signal scan for an advisory engagement. Web search, four lanes, append
-  to a status file.
+**The weekly Terrace 35 advertising review.** Pulls Meta spend and compares it against
+lead quality in the sheet. A connector plus a prompt on a schedule. No app was built.
 
-Naming these matters. If the answer to the null test is "a skill already does it", the
-right move is to use the skill and not build. We did that, repeatedly.
+**The weekly market signal scan.** Web search across four lanes, appended to a status
+file. Same shape.
 
-## Where it is not enough
+Naming these matters. When the answer to the null test is that a skill already does it,
+the right move is to use the skill and not build. We did that, more than once.
 
-**Identity across 234 firms that do not trust each other.**
-A skill cannot hold the attribution window, decide which of two claims on the same phone
-number is the owner, enforce that a partner reads only their own rows, and leave a log an
-arbitrator can defend. That needs multi tenant state, row level security and a decision
-record. A connector has no notion of who is asking.
+## Where it was not enough
 
-**Twenty seven people writing to the same record all day.**
-Concurrency, role based permission, audit. Not a prompt.
+**One identity across 234 firms that do not trust each other.**
+A prompt cannot hold a 90 day claim, decide which of two registrations on the same number
+owns it, stop a firm from reading another firm's rows, and leave a log that stands up in
+front of the firm that lost. That needs multi-tenant state, row level security and a
+decision record. A connector has no idea who is asking.
 
-**Reading a government portal that changes shape.**
-A generic assistant can read one RERA PDF beautifully. It cannot watch several thousand
-project pages for change, hash them to avoid re-reading, queue what moved, hold the
+**27 people writing to the same record all day.**
+Concurrency, role based permission, audit.
+
+**A government portal that changes shape.**
+Claude can read one RERA PDF beautifully. It cannot watch several thousand project pages
+for change, hash them so it does not re-read what has not moved, queue what did, hold the
 evidence behind each verdict, and refuse to publish until a person signs. The AI step is
-the cheap part. The pipeline around it is the work.
+the cheap part of that. The pipeline around it is the work.
 
 **The pricing engine.**
 Floor rise, facing premium, parking tier, GST, corpus. One wrong quote to a buyer is a
-commercial problem. This has to be computed, not generated.
+commercial problem, so it has to be computed and not generated.
 
-## The honest verdict
+## Verdict
 
-Pieces of this would have failed the null test and were correctly not built as apps.
-The spine would not. A family record that 234 competing firms, 27 staff and a builder all
-write to, with attribution arbitration and row level security, is not a skill plus a
-connector, and no amount of prompting makes it one.
+Parts of this would have failed the null test, and those parts were correctly not built as
+applications. The record itself passes. A family record that 234 competing firms, 27 staff
+and a builder all write to, with arbitration and row level security, is not a skill plus a
+connector.
