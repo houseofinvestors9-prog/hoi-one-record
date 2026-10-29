@@ -20,7 +20,7 @@ range is what was actually established.
 ---
 
 ## HOI Lead Engine
-`hoi-lead-flow.base44.app` · app id `6a8558145fe1f9a3e43b5482` · 49 entities
+`hoi-lead-flow.base44.app` · 49 entities
 
 | Fact | Value | Method | Source |
 |---|---|---|---|
@@ -47,7 +47,7 @@ That last row matters. The public safety checker is wired into the same engine a
 source, which is the point of the loop.
 
 ## Sri Aditya Lead Desk
-`aditya-lead-desk.base44.app` · app id `6a2a7979a089504da797f9b6` · 11 entities
+`aditya-lead-desk.base44.app` · 11 entities
 
 | Fact | Value | Method | Source |
 |---|---|---|---|
