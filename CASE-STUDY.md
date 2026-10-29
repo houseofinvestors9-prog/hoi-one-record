@@ -5,6 +5,11 @@ House of Investors, Hyderabad. 29 October 2026.
 
 Read as a page: **https://claude.ai/artifact/1tgQ61k4rGfeX2tPQt5ZZb**
 
+House of Investors is a real estate wealth house in Hyderabad. It works two lines: seller
+mandates on builder launches, and a land co investment product for HNI and NRI buyers.
+Both lines sell to the same families, which is why 9,100 of them had to be given one
+identity before anything else could be counted.
+
 ---
 
 ## 1. Problem
@@ -93,6 +98,12 @@ reason an arbitration decision can be shown to the firm that lost it.
 Nikhil Reddy, founder. Built and runs the systems. 27 people use them every working day
 across six roles: founder, admin, project head, business development, site executive,
 marketing. 234 partner firms work against them from outside the company.
+
+The house runs two lines against the same record. Seller mandates on builder launches,
+where HOI is the desk on the project. And a land co investment product, where buyers put
+money into a parcel together. A family that arrives through one line is often sold the
+other eighteen months later, which is why the record has to survive the transaction
+instead of closing with it.
 
 ---
 
