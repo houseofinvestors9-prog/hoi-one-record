@@ -1,7 +1,7 @@
 # One record for one family
 
 **100xEngineers Cohort 7, Final Capstone**
-House of Investors, Hyderabad. 30 October 2026.
+Nikhil Reddy, CMO, House of Investors. Hyderabad, 30 October 2026.
 
 Read as a page: **https://claude.ai/artifact/1tgQ61k4rGfeX2tPQt5ZZb**
 

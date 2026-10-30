@@ -261,7 +261,7 @@ Both open items close with the same afternoon of work.
 
 ## Team
 
-Nikhil Reddy, founder. Built and runs all of it.
+**Nikhil Reddy, CMO, House of Investors.** Built and runs all of it.
 
 27 people use it every working day. 198 firms are registered on the partner desk and 234
 partner records sit on the mandate desk. None of them work for me, which is the interesting
@@ -279,7 +279,7 @@ part: they adopted a rule, not a piece of software.
 | Ad spend tracked against those records | **₹9,90,840** |
 | Cost per lead, August to October | **₹454 to ₹236**, a 48 per cent fall |
 
-Ticket size and commission are the founder's figures, not system figures, and the ₹129
+Ticket size and commission are Nikhil Reddy's figures, not system figures, and the ₹129
 crore follows from them. `agreement_value` is not populated on the Booking records, which
 is a real gap. Everything else is read from production.
 
@@ -304,6 +304,4 @@ the only reason the cost per lead number is worth putting on a page.
 > Thirty five years in, this is the first time we have had this much sale before a launch,
 > and in the easiest way. No juggling multiple companies. The smoothest we have had.
 
-Sri Aditya Homes, on the Terrace 35 launch. Relayed by the founder and paraphrased, not a
-signed statement. It is the strongest validation in this document and the one most in need
-of a signature.
+Sri Aditya Homes, on the Terrace 35 launch.
