@@ -212,6 +212,7 @@ outcome.
 | ₹9,90,840 | ad spend tracked | `Spend`, 578 daily campaign rows, 24 Jul to 30 Oct |
 | 3,101 | leads attributed to that spend | `Spend.leads`, exact |
 | ₹454 to ₹236 | cost per Meta lead, Aug to Oct | computed from `Spend`, a 48 per cent fall |
+| ₹373 | real cost per form fill, October | `Spend.form_leads`, 89 campaign days, after the fix below |
 | 234 | partner records, mandate desk | `Partner` count, exact |
 | 198 | firms in the house registry | `PartnerRegistry` count, exact |
 | 125 | families with a Wealth Snapshot | `WealthProfile` count, exact |
@@ -278,6 +279,7 @@ part: they adopted a rule, not a piece of software.
 | 43 verified bookings at that average | **₹129 crore** of property |
 | Ad spend tracked against those records | **₹9,90,840** |
 | Cost per Meta lead, August to October | **₹454 to ₹236**, a 48 per cent fall |
+| Real cost per form fill, October | **₹373**, against ₹219 on Meta's count |
 
 Ticket size and commission are Nikhil Reddy's figures, not system figures, and the ₹129
 crore follows from them. `agreement_value` is not populated on the Booking records, which
@@ -307,13 +309,22 @@ the only reason the cost per lead number is worth putting on a page.
 
 Sri Aditya Homes, on the Terrace 35 launch.
 
-## One caveat on the cost per lead
+## We were measuring our own cost per lead 1.7 times too low
 
-The lead count behind those figures is Meta's own. `pullSpend` takes it from the `lead`
-action, and Meta's `lead` action also counts website events, not only form fills. The
-real form fill metric is `onsite_conversion.lead_grouped`, which the pull does not read.
+`pullSpend` read Meta's `lead` action and called it a lead. Meta counts website lead
+events in that action, not only form fills. So every cost per lead quoted since August
+has been flattering, and nobody caught it because the number was moving the right way.
 
-So the true cost per form fill is higher than ₹236. The same metric is used in all three
-months, so the 48 per cent fall is real even though the level is flattering. Fixing the
-pull to read the grouped action is a small change and worth doing before this number is
-quoted anywhere else.
+Fixed on 30 October. The pull now also reads `onsite_conversion.lead_grouped`, which is
+form fills and nothing else, and stores it as `form_leads` beside the old `leads` so
+nothing reading the old field shifts underneath. October was re-pulled on the corrected
+reading: 122 rows, 89 updated, 0 failed.
+
+| October, Meta campaigns, 89 campaign days | Leads | Cost each |
+|---|---|---|
+| Meta's `lead` action, what we had been counting | 1,196 | ₹219 |
+| Form fills only, what a lead actually is | 704 | **₹373** |
+
+₹2,62,290 of October Meta spend. **41 per cent of what Meta called a lead was not a form
+fill.** August and September have not been re-pulled, so the three month trend is still
+shown on Meta's count. That re-pull needs an admin call and is the next thing to do.
