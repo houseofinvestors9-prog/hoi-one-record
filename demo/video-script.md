@@ -106,7 +106,11 @@ the review desk with something waiting for approval.
 Hold each for about two seconds. The two headline numbers already ran in shot 3.
 
 > Thirty to forty thousand contacts logged against them. Twenty seven people using it
-> every working day. Seventy four bookings closed on it.
+> every working day. Forty three bookings verified on it.
+
+**The recorded cut says "seventy four" here, which is wrong.** 74 is the booking record
+count; 43 passed verification. Shot 7 has to be re-recorded before this video is used
+anywhere that matters.
 
 ## Shot 8 · 2:08 to 2:30 · the close
 

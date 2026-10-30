@@ -74,7 +74,10 @@ Method, and which figures are exact, in [docs/04-evidence.md](docs/04-evidence.m
 | duplicate claims caught | 24 |
 | disputes settled with a written decision | 3 |
 | Site visits scheduled | 420 to 500 |
-| Bookings closed on the record | 74 |
+| Booking records logged | 74 |
+| Of those, verified | 43 |
+| Ad spend tracked | ₹9,90,840 |
+| Cost per lead, Aug to Oct | ₹454 to ₹236 |
 | People using it every working day | 27 |
 | Projects live on it | 10 |
 
@@ -126,5 +129,5 @@ benefit is not a number.
 system caught. What firms argued about earlier was never counted, because nobody was
 counting.
 
-**Revenue the system produced.** 74 bookings sit on the record. How many would have
+**Revenue the system produced.** 43 verified bookings sit on the record. How many would have
 closed anyway is unknown.

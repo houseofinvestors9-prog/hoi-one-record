@@ -79,7 +79,7 @@ presses approve on the review desk.
 **Dispute rate before the system.** 24 duplicates and 3 disputes are what the system
 caught. What firms argued about earlier was never counted, because nobody was counting.
 
-**Revenue attributable to the system.** 74 bookings sit on the record. How many would have
+**Revenue attributable to the system.** 43 verified bookings sit on the record, out of 74 logged. How many would have
 closed anyway is unknown and should not be claimed.
 
 What the data does support: 9,100 families who used to live in spreadsheets now have one

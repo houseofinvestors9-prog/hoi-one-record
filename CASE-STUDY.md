@@ -52,6 +52,21 @@ sometimes a proper CRM. The lists never meet.
 
 So three things go wrong, every single time.
 
+**The same flat gets booked twice.** Two sales partners, two buyers, one unit. Neither
+partner knows about the other until somebody tries to collect. By then both families have
+paid a token.
+
+**The same flat carries three prices.** Each partner quotes what they think will close.
+Two buyers compare notes at the site office and one of them has been charged more for the
+same thing.
+
+**Amenities get invented to win the sale.** A partner promises something the project does
+not have. The buyer signs on that promise, and nobody can un-promise it at handover.
+
+**The builder's name wears all of it.** Not the partner's. The buyer does not remember
+which firm said what. They remember who built it. Sri Aditya Homes has been building for
+35 years and that reputation absorbs a mistake made by somebody with no stake in it.
+
 **The family gets tired.** By the third call they have explained their budget, their
 timeline and their school requirement to four different people. They stop answering
 properly. Not because they are not interested. Because answering is now work.
@@ -192,7 +207,11 @@ outcome.
 | 2,685 | new in 23 days | 9,100 minus 6,415, about 117 a day |
 | 30,000 to 40,000 | activities logged | offset probe, so a range not a point |
 | 27 | people using it daily | attendance punches, last 23 days |
-| 74 | bookings closed | `Booking` records with a cheque |
+| 74 | booking records logged | `Booking` count, exact |
+| 43 | of those verified | `status: verified`, exact. 17 rejected, 13 pending, 1 cancelled |
+| ₹9,90,840 | ad spend tracked | `Spend`, 578 daily campaign rows, 24 Jul to 30 Oct |
+| 3,101 | leads attributed to that spend | `Spend.leads`, exact |
+| ₹454 to ₹236 | cost per lead, Aug to Oct | computed from `Spend`, a 48 per cent fall |
 | 234 | partner records, mandate desk | `Partner` count, exact |
 | 198 | firms in the house registry | `PartnerRegistry` count, exact |
 | 125 | families with a Wealth Snapshot | `WealthProfile` count, exact |
@@ -247,3 +266,44 @@ Nikhil Reddy, founder. Built and runs all of it.
 27 people use it every working day. 198 firms are registered on the partner desk and 234
 partner records sit on the mandate desk. None of them work for me, which is the interesting
 part: they adopted a rule, not a piece of software.
+
+---
+
+## The money, so the numbers mean something
+
+| | |
+|---|---|
+| Average ticket on these projects | **₹3 crore** |
+| Commission | **4 to 5 per cent**, so ₹12 to ₹15 lakh on one booking |
+| 43 verified bookings at that average | **₹129 crore** of property |
+| Ad spend tracked against those records | **₹9,90,840** |
+| Cost per lead, August to October | **₹454 to ₹236**, a 48 per cent fall |
+
+Ticket size and commission are the founder's figures, not system figures, and the ₹129
+crore follows from them. `agreement_value` is not populated on the Booking records, which
+is a real gap. Everything else is read from production.
+
+A duplicate claim is a claim on a buyer, and most buyers never book. So 24 duplicates is
+not 24 times ₹12 lakh. What ₹12 to ₹15 lakh describes is the stake on a claim that does
+reach a booking, which is why the rule had to be written down before anyone argued.
+
+## The market it sits in
+
+| | | |
+|---|---|---|
+| Homes registered in Hyderabad, Jan to Sep 2026 | 55,715 | Knight Frank India, via press |
+| Value of those registrations | ₹39,910 crore | up 4 per cent year on year |
+| September registrations | down 15 per cent | year on year. August down 9 per cent |
+| Projects on the Telangana RERA register | about 11,284 | secondary source, the portal is the authority |
+
+The market fell while our cost per lead fell. Those two usually move together, which is
+the only reason the cost per lead number is worth putting on a page.
+
+## What the builder said
+
+> Thirty five years in, this is the first time we have had this much sale before a launch,
+> and in the easiest way. No juggling multiple companies. The smoothest we have had.
+
+Sri Aditya Homes, on the Terrace 35 launch. Relayed by the founder and paraphrased, not a
+signed statement. It is the strongest validation in this document and the one most in need
+of a signature.
