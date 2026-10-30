@@ -1,9 +1,9 @@
 # One record for one family
 
 **100xEngineers Cohort 7, Final Capstone**
-House of Investors, Hyderabad. 29 October 2026.
+House of Investors, Hyderabad. 30 October 2026.
 
-Live page: **https://claude.ai/artifact/1tgQ61k4rGfeX2tPQt5ZZb**
+Read as a page: **https://claude.ai/artifact/1tgQ61k4rGfeX2tPQt5ZZb**
 
 ---
 
@@ -11,10 +11,36 @@ Live page: **https://claude.ai/artifact/1tgQ61k4rGfeX2tPQt5ZZb**
 
 | | |
 |---|---|
-| **The problem** | Every firm working a family keeps its own list. So the family gets asked the same questions four times, and two firms end up fighting over who owns the buyer. |
-| **What we did** | Gave the family one permanent ID at first contact. Every touch after that, from the ad click to the cheque, gets written against that ID. |
-| **Where it stands** | 9,100 families on one record, 6,415 of them pulled out of spreadsheets. 24 duplicate claims caught. 3 fights settled with a written decision. |
-| **Still open** | We have not measured the minutes this saves per family. The old sheets are still in the database, so it is one afternoon of work. |
+| **The problem** | Six people work the same family and each keeps a separate list. So the family answers the same questions four times, two firms fight over whose buyer it was, and the builder who paid for the ads has to ask somebody for a spreadsheet. |
+| **What we did** | Gave the family one permanent ID at first contact. Everything after that, from the ad they clicked to the cheque they wrote, gets written against that one ID. |
+| **Where it stands** | 9,100 families on one record, 6,415 of them spreadsheet rows until 6 October. Four of six surfaces live, 27 people on it daily, 198 firms registered. |
+| **Still open** | Two of the six surfaces are named and not built. And the minutes saved per family is not measured. That is one afternoon of work. |
+
+## What House of Investors is
+
+A real estate wealth house in Hyderabad, working two lines. **Seller mandates**, where a
+builder hands us a project to sell. And a **land co investment** product, where buyers put
+money into a parcel together.
+
+Both lines sell to the same families. A family that buys a flat through one line is often
+the right buyer for a land deal a year and a half later. If nobody wrote down what
+happened the first time, you start from nothing. That is the whole reason this exists.
+
+## Two loops, one record
+
+| Loop | Surface | Status | Size today |
+|---|---|---|---|
+| Family | hyderabad.properties, the public project check | **Live** | 4 government sources |
+| Family | Wealth Snapshot, what the family owns | **Live** | 125 families |
+| Family | Ratio, the family's full portfolio | Not built | zero |
+| Builder | Lead Desk, where our people work | **Live** | 9,100 families |
+| Builder | Partner Desk, outside firms | **Live** | 198 firms |
+| Builder | Control Room, the builder's own screen | Not built | zero |
+
+Underneath all six: the **Lead Engine**, 49 tables, and the counter that issues the family
+ID. Both loops write to it.
+
+**One record for one family. So nobody asks the same question twice.**
 
 ## The observation, with no product in it
 
