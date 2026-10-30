@@ -211,7 +211,7 @@ outcome.
 | 43 | of those verified | `status: verified`, exact. 17 rejected, 13 pending, 1 cancelled |
 | ₹9,90,840 | ad spend tracked | `Spend`, 578 daily campaign rows, 24 Jul to 30 Oct |
 | 3,101 | leads attributed to that spend | `Spend.leads`, exact |
-| ₹454 to ₹236 | cost per lead, Aug to Oct | computed from `Spend`, a 48 per cent fall |
+| ₹454 to ₹236 | cost per Meta lead, Aug to Oct | computed from `Spend`, a 48 per cent fall |
 | 234 | partner records, mandate desk | `Partner` count, exact |
 | 198 | firms in the house registry | `PartnerRegistry` count, exact |
 | 125 | families with a Wealth Snapshot | `WealthProfile` count, exact |
@@ -277,7 +277,7 @@ part: they adopted a rule, not a piece of software.
 | Commission | **4 to 5 per cent**, so ₹12 to ₹15 lakh on one booking |
 | 43 verified bookings at that average | **₹129 crore** of property |
 | Ad spend tracked against those records | **₹9,90,840** |
-| Cost per lead, August to October | **₹454 to ₹236**, a 48 per cent fall |
+| Cost per Meta lead, August to October | **₹454 to ₹236**, a 48 per cent fall |
 
 Ticket size and commission are Nikhil Reddy's figures, not system figures, and the ₹129
 crore follows from them. `agreement_value` is not populated on the Booking records, which
@@ -294,7 +294,8 @@ reach a booking, which is why the rule had to be written down before anyone argu
 | Homes registered in Hyderabad, Jan to Sep 2026 | 55,715 | Knight Frank India, via press |
 | Value of those registrations | ₹39,910 crore | up 4 per cent year on year |
 | September registrations | down 15 per cent | year on year. August down 9 per cent |
-| Projects on the Telangana RERA register | about 11,284 | secondary source, the portal is the authority |
+| Projects hyderabad.properties holds | 1,190 | read off the TG-RERA record |
+| Of those, filings with a missed deadline or litigation | 479 | two in every five projects it reads |
 
 The market fell while our cost per lead fell. Those two usually move together, which is
 the only reason the cost per lead number is worth putting on a page.
@@ -305,3 +306,14 @@ the only reason the cost per lead number is worth putting on a page.
 > and in the easiest way. No juggling multiple companies. The smoothest we have had.
 
 Sri Aditya Homes, on the Terrace 35 launch.
+
+## One caveat on the cost per lead
+
+The lead count behind those figures is Meta's own. `pullSpend` takes it from the `lead`
+action, and Meta's `lead` action also counts website events, not only form fills. The
+real form fill metric is `onsite_conversion.lead_grouped`, which the pull does not read.
+
+So the true cost per form fill is higher than ₹236. The same metric is used in all three
+months, so the 48 per cent fall is real even though the level is flattering. Fixing the
+pull to read the grouped action is a small change and worth doing before this number is
+quoted anywhere else.
